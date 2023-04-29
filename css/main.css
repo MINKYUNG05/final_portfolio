@@ -224,11 +224,11 @@
 .link a {
     font-size: 15px;
     font-weight: 900;
-    color:black;
+    color: black;
 }
 
-.link:hover{
-background-color: springgreen;
+.link:hover {
+    background-color: springgreen;
 }
 
 
@@ -286,8 +286,8 @@ background-color: springgreen;
     /* font-weight: 900; */
 }
 
-#num1{
- border-left:1px solid black;
+#num1 {
+    border-left: 1px solid black;
 }
 
 
@@ -316,23 +316,25 @@ background-color: springgreen;
     margin: 20px 0;
 }
 
-.inner-content{
-    display:flex;
+.inner-content {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.pj-box{
+.pj-box {
     width: 90%;
     height: 400px;
     border: 1px solid black;
     margin-top: 50px;
     overflow: hidden;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pj-img{
+.pj-img {
     width: 40%;
     height: 400px;
     border-right: 1px solid black;
@@ -340,44 +342,123 @@ background-color: springgreen;
     background-size: cover;
 }
 
-.pj-img:hover{
+.pj-img:hover {
     /* background-color: linear-gradient(to top, rgba(0, 255, 128, 0.484),rgba(255,0,0,0)); */
     background-color: white;
 }
 
 
-#pj-img1{
-    background-image:url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/89ef9530-4ec8-4893-be8d-5cac097cbd65-1668110598.jpg");
+#pj-img1 {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/89ef9530-4ec8-4893-be8d-5cac097cbd65-1668110598.jpg");
 }
 
 
-#pj-img2{
-    background-image:url("https://assets.vogue.com/photos/63dfab88a21c3dce91743d01/4:3/w_2560%2Cc_limit/1389405527");
+#pj-img2 {
+    background-image: url("https://assets.vogue.com/photos/63dfab88a21c3dce91743d01/4:3/w_2560%2Cc_limit/1389405527");
 }
 
-#pj-img3{
-    background-image:url("https://m.media-amazon.com/images/G/01/sp-marketing-toolkit/guides/design/photography/stock/books-with-amazon-smile_331427528_21-9_1280.jpg");
+#pj-img3 {
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/a0/91/5e/amazon-book-store.jpg?w=1200&h=-1&s=1");
 }
 
-#pj-img4{
-    background-image:url("https://en.janbharattimes.com/wp-content/uploads/2022/12/avatar-2-box-office-collection-day-4.jpg");
+#pj-img4 {
+    background-image: url("https://en.janbharattimes.com/wp-content/uploads/2022/12/avatar-2-box-office-collection-day-4.jpg");
 }
 
 
-.pj-explain{
-    width: 50%;
-    height: 400px;
+.pj-explain {
+    width: 60%;
+    height: 300px;
     /* border-right: 1px solid black; */
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 30px;
 
 }
 
-.pj-ex-title1 p{
+.pj-ex-title1 p {
+    font-size: 50px;
+    font-weight: bolder;
+    /* margin-left: 30px; */
+
+}
+
+.pj-ex-title2 p {
     font-size: 20px;
     font-weight: 900;
 }
+
+.pj-ex-bt {
+    width: 250px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.arrow {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30%;
+    transition: 0.5s ease-in-out;
+
+}
+
+.arrow p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.arr-color {
+    width: 30%;
+    height: 40px;
+    border-right: 1px solid black;
+    background-color: springgreen;
+    text-align: right;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arr-color i {
+    text-align: right;
+    font-size: 25px;
+}
+
+.arr-noncolor {
+    width: 70%;
+    height: 40px;
+    /* border-right: 1px solid black; */
+    background-color: white;
+
+}
+
+.arrow:hover {
+    margin-left: 0%;
+}
+
+/* 
+.click{
+    width: 60%;
+    height:40px;
+
+}
+
+.click p{
+    font-size: 12px;
+    line-height: 40px;
+} */
 
 
 /* button */
@@ -421,6 +502,3 @@ background-color: springgreen;
     text-align: center;
     line-height: 70px;
 }
-
-
-
