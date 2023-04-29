@@ -1,173 +1,193 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kyung's</title>
-    <meta name="description"
-        content="An experimental slideshow with an inclined look with three slide previews and a content view on click." />
-    <meta name="keywords" content="slideshow, javascript, tweenmax, rotation, animation, css" />
-    <meta name="author" content="Codrops" />
-    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
-    <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <!-- <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script> -->
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,
+    <svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%220%22 fill=%22%23000000%22></rect><path d=%22M38.77 83.81L16.19 83.81L16.19 16.19L38.77 16.19L38.77 37.61L56.41 16.19L81.92 16.19L58.51 44.12L83.81 83.81L59.87 83.81L44.65 58.40L38.77 65.22L38.77 83.81Z%22 fill=%22%23fff%22></path></svg>" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- webfont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+
+    <!--css/js -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+
+
+    <title>KIMS</title>
+
+    <style>
+
+    </style>
 </head>
 
-<body class="loading">
-    <main>
-        <div class="content">
-            <article class="content__item">
-                <div class="img-wrap img-wrap--content">
-                    <div class="img img--content" style="background-image: url(img/1.webp);"></div>
-                </div>
-                <header class="content__item-header">
-                    <span class="content__item-header-meta">New York City, March 24</span>
-                    <h2 class="content__item-header-title">Kanzu</h2>
-                </header>
-                <div class="content__item-copy">
-                    <p class="content__item-copy-text">
-                        In the gloomy domed livingroom of the tower Buck Mulligan’s gowned form
-                        moved briskly to and fro about the hearth, hiding and revealing its
-                        yellow glow. Two shafts of soft daylight fell across the flagged floor
-                        from the high barbacans: and at the meeting of their rays a cloud of
-                        coalsmoke and fumes of fried grease floated, turning.
-                    </p>
-                    <a href="#" class="content__item-copy-more">more +</a>
-                </div>
-            </article>
-            <article class="content__item">
-                <div class="img-wrap img-wrap--content">
-                    <div class="img img--content" style="background-image: url(img/9.jpg);"></div>
-                </div>
-                <header class="content__item-header">
-                    <span class="content__item-header-meta">Acapulco, March 25</span>
-                    <h2 class="content__item-header-title">Juked</h2>
-                </header>
-                <div class="content__item-copy">
-                    <p class="content__item-copy-text">
-                        The key scraped round harshly twice and, when the heavy door had been
-                        set ajar, welcome light and bright air entered. Haines stood at the
-                        doorway, looking out. Stephen haled his upended valise to the table and
-                        sat down to wait. Buck Mulligan tossed the fry on to the dish beside
-                        him. Then he carried the dish and a large teapot over to the table, set
-                        them down heavily and sighed with relief.
-                    </p>
-                    <a href="#" class="content__item-copy-more">more +</a>
-                </div>
-            </article>
-            <article class="content__item">
-                <div class="img-wrap img-wrap--content">
-                    <div class="img img--content" style="background-image: url(img/5.jpg);"></div>
-                </div>
-                <header class="content__item-header">
-                    <span class="content__item-header-meta">Brisbane, March 26</span>
-                    <h2 class="content__item-header-title">Colza</h2>
-                </header>
-                <div class="content__item-copy">
-                    <p class="content__item-copy-text">
-                        Stephen listened in scornful silence. She bows her old head to a voice
-                        that speaks to her loudly, her bonesetter, her medicineman: me she
-                        slights. To the voice that will shrive and oil for the grave all there
-                        is of her but her woman’s unclean loins, of man’s flesh made not in
-                        God’s likeness, the serpent’s prey.
-                    </p>
-                    <a href="#" class="content__item-copy-more">more +</a>
-                </div>
-            </article>
-            <article class="content__item">
-                <div class="img-wrap img-wrap--content">
-                    <div class="img img--content" style="background-image: url(img/4-1.jpg);"></div>
-                </div>
-                <header class="content__item-header">
-                    <span class="content__item-header-meta">Berlin, March 27</span>
-                    <h2 class="content__item-header-title">Voxey</h2>
-                </header>
-                <div class="content__item-copy">
-                    <p class="content__item-copy-text">
-                        And putting on his stiff collar and rebellious tie he spoke to them,
-                        chiding them, and to his dangling watchchain. His hands plunged and
-                        rummaged in his trunk while he called for a clean handkerchief. God,
-                        we’ll simply have to dress the character. I want puce gloves and green
-                        boots. Contradiction.
-                    </p>
-                    <a href="#" class="content__item-copy-more">more +</a>
-                </div>
-            </article>
-        </div>
-        <div class="revealer">
-            <div class="revealer__inner"></div>
-        </div>
-        <div class="grid grid--slideshow">
-            <figure class="grid__item grid__item--slide">
-                <span class="number">01</span>
-                <div class="img-wrap">
-                    <div class="img" style="background-image: url(img/1.webp);"></div>
-                </div>
-                <figcaption class="caption">New York City, March 24</figcaption>
-            </figure>
-            <figure class="grid__item grid__item--slide">
-                <span class="number">02</span>
-                <div class="img-wrap">
-                    <div class="img" style="background-image: url(img/9.jpg);"></div>
-                </div>
-                <figcaption class="caption">Acapulco, March 25</figcaption>
-            </figure>
-            <figure class="grid__item grid__item--slide">
-                <span class="number">03</span>
-                <div class="img-wrap">
-                    <div class="img" style="background-image: url(img/5.jpg);"></div>
-                </div>
-                <figcaption class="caption">Brisbane, March 26</figcaption>
-            </figure>
-            <figure class="grid__item grid__item--slide">
-                <span class="number">04</span>
-                <div class="img-wrap">
-                    <div class="img" style="background-image: url(img/4-1.jpg);"></div>
-                </div>
-                <figcaption class="caption">Berlin, March 27</figcaption>
-            </figure>
-            <div class="titles-wrap">
-                <div class="grid grid--titles">
-                    <h3 class="grid__item grid__item--title">Kanzu</h3>
-                    <h3 class="grid__item grid__item--title">Juked</h3>
-                    <h3 class="grid__item grid__item--title">Colza</h3>
-                    <h3 class="grid__item grid__item--title">Voxey</h3>
-                </div>
-            </div>
-            <div class="grid grid--interaction">
-                <div class="grid__item grid__item--cursor grid__item--left"></div>
-                <div class="grid__item grid__item--cursor grid__item--center"></div>
-                <div class="grid__item grid__item--cursor grid__item--right"></div>
-            </div>
-        </div>
-        <div class="frame">
-            <div class="frame__title-wrap">
-                <h1 class="fram__title">Crossroads Slideshow</h1>
-                <div class="frame__links">
-                    <a href="https://tympanus.net/Development/ExplodingObjects/">Previous Demo</a>
-                    <a href="https://tympanus.net/codrops/?p=39863">Article</a>
-                    <a href="https://github.com/codrops/CrossroadsSlideshow/">GitHub</a>
-                </div>
-                <div class="frame__mode" role="radiogroup">
-                    <div class="frame__mode-item frame__mode-item--dark">
-                        <input id="mode-1" type="radio" name="mode" class="frame__mode-input"></input>
-                        <label class="frame__mode-label" for="mode-1">Dark mode</label>
+<body>
+    <div class="body">
+
+
+        <div class="main">
+            <div class="header">
+                <div class="main_logo">
+                    <div class="top-logo">
+                        <div class="logo1">
+                            KIMS
+                        </div>
+                        <div class="logo2">
+                            <p>BRANDING</p>
+                            <p>A G E N C Y</p>
+
+                        </div>
+                        <div class="logo3">
+                            <div class="inner-logo3">
+                                <div class="logo3-color">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <p>MENU</p>
+                                </div>
+
+                                <div class="logo3-noncolor">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <p>MENU</p>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="frame__mode-item">
-                        <input id="mode-2" type="radio" name="mode" class="frame__mode-input" checked></input>
-                        <label class="frame__mode-label frame__mode-label--light" for="mode-2">Light mode</label>
+
+                    <div class="bottom-logo-nav">
+                        <ul>
+                            <li>JORDAN</li>
+                            <li>AMAZONBOOKS</li>
+                            <li>GRAMMYAWARDS</li>
+                            <li>AVATAR II</li>
+                            <li>ETC.</li>
+                            <li>Instagram / Facebook / Blog</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="link">
+                    <div class="icon">
+                        <i class="fa-solid fa-code-commit"></i>
+                    </div>
+
+                    <div class="git">
+                      <a href="https://github.com/MINKYUNG05">  Click to Github</a>
                     </div>
                 </div>
             </div>
-        </div><!-- /frame -->
-    </main>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/charming.min.js"></script>
-    <script src="js/TweenMax.min.js"></script>
-    <script src="js/demo.js"></script>
+
+
+            <!-- //main-content -->
+            <div class="main_typo">
+                <div class="content">
+                    <span>write something</span>
+                    <span>about</span>
+                    <span>yourself</span>
+                    <!-- 
+                    <div class="button">
+                        <div class="inner-bt">
+                            <div class="color">버튼1</div>
+                            <div class="non-color">버튼2</div>
+                        </div>
+                    </div> -->
+                </div>
+
+
+                <div class="content">
+                    <div class="inner-content">
+                        <div class="pj-box">
+                            <div class="pj-img" id="pj-img1"></div>
+                            <div class="pj-explain">
+                                <div class="pj-ex-title1">
+                                    <p>Air Jordan - basketball shoes </p>
+                                
+                                </div>
+                                <div class="pj-ex-title2">
+                                    <p>React/Redux Web</p>
+                                </div>
+                                <div class="pj-ex-bt">
+                                    <div class="arrow">
+                                        <div class="arr-color">
+                                            
+                                        </div>
+                                        <div class="arr-noncolor"></div>
+                                    </div>
+                                    <div class="click">
+                                        <p>See the Project</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pj-box">
+                            <div class="pj-img" id="pj-img2"></div>
+                            <div class="pj-explain"></div>
+                        </div>
+
+                        <div class="pj-box">
+                            <div class="pj-img" id="pj-img3"></div>
+                            <div class="pj-explain"></div>
+                        </div>
+
+                        <div class="pj-box">
+                            <div class="pj-img" id="pj-img4"></div>
+                            <div class="pj-explain"></div>
+                        </div>
+
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="index">
+            <div class="i1" id="num1">
+
+                <i class="fa-solid fa-j"></i>
+                <p>AirJordan</p>
+            </div>
+
+            <div class="i1" id="num2">
+
+                <i class="fa-solid fa-g"></i>
+                <p>GrammyAwards</p>
+            </div>
+            <div class="i1" id="num3">
+
+                <i class="fa-solid fa-a"></i>
+                <p>AmazonBooks</p>
+            </div>
+            <div class="i1" id="num4">
+
+                <i class="fa-solid fa-v"></i>
+                <p>AvatarII</p>
+            </div>
+
+            <div class="i1" id="num5">
+                <i class="fa-solid fa-user-plus"></i>
+                <p>Etc.</p>
+            </div>
+
+
+        </div>
+
+    </div>
 </body>
 
 </html>

@@ -17,7 +17,7 @@
     width: 80%;
     min-height: 100vh;
     background-color: white;
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
     /* margin: 0 auto; */
     display: flex;
     justify-content: center;
@@ -286,30 +286,10 @@ background-color: springgreen;
     /* font-weight: 900; */
 }
 
-/* #num1:hover {
-    background-color: rgb(150, 33, 33);
-    color: white;
+#num1{
+ border-left:1px solid black;
 }
 
-#num2:hover {
-    background-color: rgb(44, 44, 44);
-    color: white;
-}
-
-#num3:hover {
-    background-color: rgb(255, 162, 0);
-    color: white;
-}
-
-#num4:hover {
-    background-color: rgb(55, 55, 155);
-    color: white;
-}
-
-#num5:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
-} */
 
 .main_typo {
     width: 90%;
@@ -348,43 +328,39 @@ background-color: springgreen;
     height: 400px;
     border: 1px solid black;
     margin-top: 50px;
+    overflow: hidden;
     
 }
 
-.pj-img:nth-of-type(1){
+.pj-img{
     width: 40%;
     height: 400px;
     border-right: 1px solid black;
-    background-image:url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/89ef9530-4ec8-4893-be8d-5cac097cbd65-1668110598.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.pj-img:nth-of-type(2){
-    width: 40%;
-    height: 400px;
-    border-right: 1px solid black;
-    background-image:url("https://i8.amplience.net/i/naras/banner.default");
-    background-position: center;
-    background-size: cover;
+.pj-img:hover{
+    /* background-color: linear-gradient(to top, rgba(0, 255, 128, 0.484),rgba(255,0,0,0)); */
+    background-color: white;
 }
 
-.pj-img:nth-child(3){
-    width: 40%;
-    height: 400px;
-    border-right: 1px solid black;
+
+#pj-img1{
     background-image:url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/89ef9530-4ec8-4893-be8d-5cac097cbd65-1668110598.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
-.pj-img:nth-child(4){
-    width: 40%;
-    height: 400px;
-    border-right: 1px solid black;
-    background-image:url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/89ef9530-4ec8-4893-be8d-5cac097cbd65-1668110598.jpg");
-    background-position: center;
-    background-size: cover;
+
+#pj-img2{
+    background-image:url("https://assets.vogue.com/photos/63dfab88a21c3dce91743d01/4:3/w_2560%2Cc_limit/1389405527");
+}
+
+#pj-img3{
+    background-image:url("https://m.media-amazon.com/images/G/01/sp-marketing-toolkit/guides/design/photography/stock/books-with-amazon-smile_331427528_21-9_1280.jpg");
+}
+
+#pj-img4{
+    background-image:url("https://en.janbharattimes.com/wp-content/uploads/2022/12/avatar-2-box-office-collection-day-4.jpg");
 }
 
 
@@ -392,6 +368,15 @@ background-color: springgreen;
     width: 50%;
     height: 400px;
     /* border-right: 1px solid black; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pj-ex-title1 p{
+    font-size: 20px;
+    font-weight: 900;
 }
 
 
