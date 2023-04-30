@@ -303,10 +303,22 @@
 }
 
 /* content */
+
+.main-content{
+    width: 90%;
+    height: 700px;
+    font-size: 130px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid greenyellow;
+    margin: 20px 0;
+}
 .content {
 
     width: 90%;
-    height: 700px;
+    height: 2000px;
     font-size: 130px;
     font-weight: 900;
     justify-content: center;
