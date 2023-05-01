@@ -33,6 +33,7 @@ $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
+        loop: true,
         keyboard: {
             enabled: true,
         },
@@ -49,8 +50,8 @@ $(document).ready(function () {
 
 
 // index animation
-$(document).ready(function () {
-    $(".i1").click(function () {
-        $(".i1-content").show("slide", { direction: "left" }, 1000);
+$(document).ready(function(){
+    $("#t1").click(function(){
+        $("#c1").addClass('i1-content-action');
     });
 });
