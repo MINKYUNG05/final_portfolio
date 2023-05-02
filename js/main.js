@@ -50,8 +50,20 @@ $(document).ready(function () {
 
 
 // index animation
-$(document).ready(function(){
-    $("#t1").click(function(){
-        $("#c1").addClass('i1-content-action');
+$(document).ready(function () {
+    $('.title').click(function () {
+        let w = $('.bg').width();
+        // console.log($(this).next('.content').css('flex-basis'))
+        if ($(this).next('.con').css('flex-basis') == '0px') {
+            $('.bg').animate({ marginLeft: -w }, 1000);
+            $(this).parent().css({ width: '100vw' });
+            $(this).siblings('.con').animate({ flexBasis: 0 });
+            $(this).next('.con').animate({ flexBasis: w });
+
+        } else {
+            $('.bg').animate({ marginLeft: 0 });
+            $(this).parent().css({ width: '20%' })
+            $(this).next('.con').animate({ flexBasis: 0 });
+        }
     });
 });
