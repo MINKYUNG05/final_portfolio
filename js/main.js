@@ -57,13 +57,19 @@ $(document).ready(function () {
         if ($(this).next('.con').css('flex-basis') == '0px') {
             // $('.main').animate({ marginLeft: -w }, 1000);
             $(this).parent().css({ width: '100vw' });
-            $(this).siblings('.con').animate({ flexBasis: 0 });
-            $(this).next('.con').animate({ flexBasis: w });
+            $(this).siblings('.con').animate({ flexBasis: 0});
+            $('.inner-con').hide();
+            $(this).next('.con').animate({ flexBasis: w}, function(){
+                console.log($(this).find('.inner-con'))
+                $(this).find('.inner-con').fadeIn();
+            });
+            
 
         } else {
             // $('.main').animate({ marginLeft: 0 });
             $(this).parent().css({ width: '20%' })
-            $(this).next('.con').animate({ flexBasis: 0 });
+            $('.inner-con').hide();
+            $(this).next('.con').animate({ flexBasis: 0});
         }
     });
 });
