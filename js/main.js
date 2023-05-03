@@ -52,11 +52,13 @@ $(document).ready(function () {
 // index animation
 $(document).ready(function () {
     $('.title').click(function () {
+        // $(window).scrollTop(0);
+        $('html,body').animate({scrollTop:0 }, 1000);
         let w = $('.main').width();
         // console.log($(this).next('.content').css('flex-basis'))
         if ($(this).next('.con').css('flex-basis') == '0px') {
             // $('.main').animate({ marginLeft: -w }, 1000);
-            $(this).parent().css({ width: '100vw' });
+            $(this).parent().css({ width: '99vw' });
             $(this).siblings('.con').animate({ flexBasis: 0});
             $('.inner-con').hide();
             $(this).next('.con').animate({ flexBasis: w}, function(){
