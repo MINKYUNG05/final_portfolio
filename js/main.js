@@ -6,26 +6,28 @@ $(document).ready(function () {
     });
 });
 
-// content hover
-// $(document).ready(function () {
-//     $(".pj-box").hover(function () {
-//         $(".pj-img").addClass('pj-img-hover-before');
-//         $(".arrow").addClass('arrow_hover');
-//     });
-// });
+
+//menu click
+$(document).ready(function () {
+    $(".pj-box:nth-of-type(1)").click(function () {
+        $(location).attr("href", "https://minkyung05.github.io/project4_react_jordan/")
+	})
+
+    $(".pj-box:nth-of-type(2)").click(function () {
+        $(location).attr("href", "https://minkyung05.github.io/Project.2_grammyaward/")
+	})
+
+    $(".pj-box:nth-of-type(3)").click(function () {
+        $(location).attr("href", "https://minkyung05.github.io/project.3_amazonbooks/")
+	})
+
+    $(".pj-box:nth-of-type(4)").click(function () {
+        $(location).attr("href", "https://minkyung05.github.io/avatar_group_pj_new/")
+	})
+
+    });
 
 
-// see the project bt
-
-// $(document).ready(function () {
-//     $(".arrow").mouseover(function () {
-//         $(this).addClass('arrow_hover');
-//     });
-//     $(".arrow").mouseleave(function () {
-//         $(this).removeClass('arrow_hover');
-//     });
-
-// });
 
 
 // swiperdemo
@@ -33,7 +35,7 @@ $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
-        // loop: true,
+        loop: true,
         centeredSlides: true,
         centeredSlidesBounds: true,
         keyboard: {
@@ -80,4 +82,3 @@ $(document).ready(function () {
 });
 
 
-// drop-text
