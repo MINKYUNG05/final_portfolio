@@ -380,6 +380,11 @@
 
 }
 
+#con-content-title a{
+    text-decoration: none;
+    color:black;
+}
+
 .con-content img{
     width: 900px;
     height: 850px;
