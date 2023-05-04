@@ -33,7 +33,9 @@ $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 30,
-        loop: true,
+        // loop: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
         keyboard: {
             enabled: true,
         },
@@ -69,7 +71,8 @@ $(document).ready(function () {
 
         } else {
             // $('.main').animate({ marginLeft: 0 });
-            $(this).parent().css({ width: '20%' })
+            $(this).parent().css({ width: '20%' });
+
             $('.inner-con').hide();
             $(this).next('.con').animate({ flexBasis: 0 });
         }
