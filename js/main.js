@@ -31,7 +31,7 @@ $(document).ready(function () {
 // swiperdemo
 $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 30,
         loop: true,
         keyboard: {
@@ -53,25 +53,28 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.title').click(function () {
         // $(window).scrollTop(0);
-        $('html,body').animate({scrollTop:0 }, 1000);
+        $('html,body').animate({ scrollTop: 0 }, 1000);
         let w = $('.main').width();
         // console.log($(this).next('.content').css('flex-basis'))
         if ($(this).next('.con').css('flex-basis') == '0px') {
             // $('.main').animate({ marginLeft: -w }, 1000);
             $(this).parent().css({ width: '99vw' });
-            $(this).siblings('.con').animate({ flexBasis: 0});
+            $(this).siblings('.con').animate({ flexBasis: 0 });
             $('.inner-con').hide();
-            $(this).next('.con').animate({ flexBasis: w}, function(){
+            $(this).next('.con').animate({ flexBasis: w }, function () {
                 console.log($(this).find('.inner-con'))
                 $(this).find('.inner-con').fadeIn();
             });
-            
+
 
         } else {
             // $('.main').animate({ marginLeft: 0 });
             $(this).parent().css({ width: '20%' })
             $('.inner-con').hide();
-            $(this).next('.con').animate({ flexBasis: 0});
+            $(this).next('.con').animate({ flexBasis: 0 });
         }
     });
 });
+
+
+// drop-text
