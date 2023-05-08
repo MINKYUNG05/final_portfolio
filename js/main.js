@@ -10,22 +10,34 @@ $(document).ready(function () {
 //menu click
 $(document).ready(function () {
     $(".pj-box:nth-of-type(1)").click(function () {
-        $(location).attr("href", "https://minkyung05.github.io/project4_react_jordan/")
+        // $(location).attr("href", "https://minkyung05.github.io/project4_react_jordan/")
+        window.open("https://minkyung05.github.io/project4_react_jordan/", "_blank")
 	})
 
     $(".pj-box:nth-of-type(2)").click(function () {
-        $(location).attr("href", "https://minkyung05.github.io/Project.2_grammyaward/")
+        // $(location).attr("href", "https://minkyung05.github.io/Project.2_grammyaward/")
+        window.open("https://minkyung05.github.io/Project.2_grammyaward/", "_blank")
 	})
 
     $(".pj-box:nth-of-type(3)").click(function () {
-        $(location).attr("href", "https://minkyung05.github.io/project.3_amazonbooks/")
+        // $(location).attr("href", "https://minkyung05.github.io/project.3_amazonbooks/")
+        window.open("https://minkyung05.github.io/project.3_amazonbooks/", "_blank")
 	})
 
     $(".pj-box:nth-of-type(4)").click(function () {
-        $(location).attr("href", "https://minkyung05.github.io/avatar_group_pj_new/")
+        // $(location).attr("href", "https://minkyung05.github.io/avatar_group_pj_new/")
+        window.open("https://minkyung05.github.io/avatar_group_pj_new/", "_blank")
+	})
+
+
+    $(".pj-box:nth-of-type(5)").click(function () {
+        // $(location).attr("href", "https://minkyung05.github.io/avatar_group_pj_new/")
+        window.open(" https://www.behance.net/gallery/170104355/just-sample-work-%28I-will-deleted%29", "_blank")
 	})
 
     });
+
+
 
 
 
