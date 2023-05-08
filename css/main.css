@@ -102,6 +102,9 @@
 .bottom-logo-nav ul li a{
     text-decoration: none;
     color:black;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .bottom-logo-nav ul li:hover {
@@ -437,30 +440,32 @@
 }
 
 .con-content-text {
-    width: 1400px;
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     /* border: 1px solid red; */
-    text-align: center;
+    /* text-align: center; */
 }
 
-.con-content-text p {
-    width: 400px;
+#con-content-text-title {
+    width: 40%;
     font-size: 70px;
     font-weight: 900;
-    margin: 0 20px 0 0;
+    /* margin: 0 20px 0 0; */
     text-align: center;
     /* color: black !important; */
 }
 
-.con-content-text2 p {
-    width: 900px;
-    font-size: 15px;
-    margin: 10px 0;
+
+.con-content-text2{
+    width: 60%;
+    font-size: 20px;
+    /* margin: 10px 0; */
     text-align: center;
+    line-height: 50px;
     /* font-weight: 900; */
 }
 
@@ -478,7 +483,7 @@
 }
 
 #key-title {
-    width: 400px;
+    width: 40%;
     font-size: 70px;
     font-weight: 900;
     margin: 0 20px 0 0;
@@ -487,7 +492,7 @@
 }
 
 .tag {
-    width: 900px;
+    width: 60%;
 }
 
 .tag ul li {
@@ -495,10 +500,12 @@
     color: white;
     text-align: center;
     margin: 20px 0;
+    /* text-align: left; */
 }
 
 .tag ul li a {
     color: #01ff70;
+    font-size: 35px;
 }
 
 
@@ -1071,6 +1078,8 @@
 
 .left-f a {
     position: relative;
+    text-decoration: none;
+    color:black;
 }
 
 .left-f ul li a:after {
