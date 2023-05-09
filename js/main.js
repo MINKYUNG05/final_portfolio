@@ -1,3 +1,16 @@
+//start main
+$(document).ready(function () {
+        $(".send:nth-of-type(1)").addClass('message-show1');
+        $(".receive:nth-of-type(2)").addClass('message-show2');
+        $(".send:nth-of-type(3)").addClass('message-show3');
+        $(".receive:nth-of-type(4)").addClass('message-show4');
+        $(".receive:nth-of-type(5)").addClass('message-show5');
+        $(".send:nth-of-type(6)").addClass('message-show6');
+        $(".receive:nth-of-type(7)").addClass('message-show7');
+    });
+
+
+
 
 // menu bt
 $(document).ready(function () {
