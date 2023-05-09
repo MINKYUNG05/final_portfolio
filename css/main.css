@@ -620,7 +620,7 @@
 .main-content {
     width: 81%;
     height: 800px;
-    /* font-weight: 900; */
+    font-weight: 900;
     justify-content: center;
     align-items: center;
     flex-direction: column;
