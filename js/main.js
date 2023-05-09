@@ -20,6 +20,46 @@ $(document).ready(function () {
 });
 
 
+
+//menu bt slideup
+$(document).ready(function () {
+    $(".bottom-logo-nav ul li:nth-of-type(1)").click(function () {
+        $(".bottom-logo-nav").slideUp();
+    });
+});
+
+$(document).ready(function () {
+    $(".bottom-logo-nav ul li:nth-of-type(2)").click(function () {
+        $(".bottom-logo-nav").slideUp();
+    });
+});
+
+$(document).ready(function () {
+    $(".bottom-logo-nav ul li:nth-of-type(3)").click(function () {
+        $(".bottom-logo-nav").slideUp();
+    });
+});
+
+
+$(document).ready(function () {
+    $(".bottom-logo-nav ul li:nth-of-type(4)").click(function () {
+        $(".bottom-logo-nav").slideUp();
+    });
+});
+
+$(document).ready(function () {
+    $(".bottom-logo-nav ul li:nth-of-type(5)").click(function () {
+        $(".bottom-logo-nav").slideUp();
+    });
+});
+
+$(document).ready(function () {
+    $(".bottom-logo-nav ul li:nth-of-type(6)").click(function () {
+        $(".bottom-logo-nav").slideUp();
+    });
+});
+
+
 //menu click
 $(document).ready(function () {
     $(".pj-box:nth-of-type(1)").click(function () {
@@ -106,4 +146,15 @@ $(document).ready(function () {
     });
 });
 
+
+
+
+//index close-bt
+$(document).ready(function () {
+    $('.title').click(function () {
+        $(this).siblings().children(".close").removeClass('show-close');
+        $(this).children(".close").toggleClass('show-close');
+        // $(this).siblings().children(".close").css("opacity","0");
+    });
+});
 
