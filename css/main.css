@@ -4,10 +4,10 @@
     box-sizing: border-box;
     /* font-family: 'Kanit'; */
     list-style-type: none;
-    /* font-family: 'Bruno Ace', 'Segoe UI'; */
+    font-family: 'Bruno Ace', 'Segoe UI';
     /* font-family: 'Oswald', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
-    font-family: 'Hammersmith One', sans-serif;
+    /* font-family: 'Hammersmith One', sans-serif; */
 
     text-decoration: none;
 }
